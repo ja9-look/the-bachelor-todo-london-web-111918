@@ -50,7 +50,6 @@ end
 
 
 def get_average_age_for_season(data, season)
-  # code here	i = 0
 gross = 0
 data[season].each do |pairs|
   gross = gross + pairs["age"].to_f
