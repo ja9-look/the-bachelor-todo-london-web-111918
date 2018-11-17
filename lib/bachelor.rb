@@ -48,6 +48,8 @@ def get_occupation(data, hometown)
 end
 
 def get_average_age_for_season(data, season)
+  age = 0 
+  counter = 0 
   data.each do |season, array|
     array.each do |person|
       person.each do |key,value|
