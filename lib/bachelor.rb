@@ -57,4 +57,4 @@ data[season].each do |pairs|
   i += 1
 end
 (gross / i).round
-end	end
+end	
