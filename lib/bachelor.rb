@@ -64,7 +64,6 @@ def get_average_age_for_season(data, season)
 end
 
 def get_average_age_for_season(data, season)
-  # code here	  new_array = []
   total_age = 0
   counter = 0
   data.each do | season_number, all_contestants |
