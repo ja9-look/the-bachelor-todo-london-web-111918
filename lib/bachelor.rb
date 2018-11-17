@@ -13,7 +13,7 @@ def get_contestant_name(data, occupation)
   data[occupation].each do |person|
     person.each do |key, value|
       if occupation == [:"occupation"]
-        return full_name
+        return person["name"]
       end
     end
   end
