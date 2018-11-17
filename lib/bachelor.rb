@@ -47,18 +47,14 @@ def get_occupation(data, hometown)
   end
 end
 
+
+
 def get_average_age_for_season(data, season)
-  age = 0 
-  counter = 0 
-  data.each do |season, array|
-    array.each do |person|
-      person.each do |key,value|
-        if key == "age"
-          age += value.to_f 
-          counter += 1  
-        end
-      end
-    end
-  end
-  return (age/counter).round
+  # code here	i = 0
+gross = 0
+data[season].each do |pairs|
+  gross = gross + pairs["age"].to_f
+  i += 1
 end
+(gross / i).round
+end	end
