@@ -2,7 +2,7 @@ def get_first_name_of_season_winner(data, season)
   dada[season].each do |lady|
     lady.each do |status, value|
       if value == "winner"
-        
+        full_name = lady
 end
 
 def get_contestant_name(data, occupation)
