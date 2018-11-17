@@ -54,7 +54,7 @@ def get_average_age_for_season(data, season)
     array.each do |person|
       person.each do |key,value|
         if key == "age"
-          age += value.to_i
+          age += value.ceil
           counter += 1  
         end
       end
