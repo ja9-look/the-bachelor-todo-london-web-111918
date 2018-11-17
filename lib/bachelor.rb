@@ -12,7 +12,11 @@ end
 def get_contestant_name(data, occupation)
   data[occupation].each do |person|
     person.each do |key, value|
-      if occupation == 
+      if occupation == [:"occupation"]
+        return full_name
+      end
+    end
+  end
 end
 
 def count_contestants_by_hometown(data, hometown)
