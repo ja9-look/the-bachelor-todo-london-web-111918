@@ -1,5 +1,5 @@
 def get_first_name_of_season_winner(data, season)
-  dada[season].each do |person|
+  data[season].each do |person|
     person.each do |key, value|
       if value == "winner"
         full_name = person["name"]
